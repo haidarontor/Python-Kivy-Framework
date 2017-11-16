@@ -1,0 +1,29 @@
+#:import random random
+<Ex14>:
+	canvas:
+		Color:
+			rgb: [.245+.05*random.random()]*3
+		Rectangle:
+			pos:self.pos
+			size:self.size
+		Color:
+			rgb:1,.1,.5
+		Line:
+			points:app.Head+app.Chin
+			width:3
+		Color:
+			rgb:1,.5,.1
+		Line:
+			points:app.Leye
+			width:2
+	
+		Line:
+			points:app.Reye
+			width:2
+							
+		Line:
+			points:app.Mouth
+			width:2
+		Line:
+			points:app.Nose
+			width:2			

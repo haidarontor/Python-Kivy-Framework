@@ -1,0 +1,18 @@
+#:set x1 300
+#:set y1 200
+#:set x2 500
+#:set y2 400
+
+<Ex15>:
+	canvas:
+		Color:
+			rgb:.9,.95,1
+		Rectangle:
+			pos:self.pos
+			size:self.size
+		Color:
+			rgb:1,.1,.5
+		Quad:
+			points: x1,y1 ,x1,y2 , x2,y2 , x2,y1
+		Color :
+			rgb : 1,.5,.1			

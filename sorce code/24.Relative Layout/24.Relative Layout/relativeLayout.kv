@@ -1,0 +1,26 @@
+<MyButton@Button>:
+	size_hint:.2 ,.2
+	
+<relativeLayout>:
+	canvas:
+		Color:
+			rgb:0,1,1
+		Rectangle:
+			pos: [0.2*coord for coord in self.size]
+			size: [0.6*coord for coord in self.size]
+	MyButton:
+		text:'B1'
+		pos_hint:{'x':0,'y':0}
+	MyButton:
+		text:'B2'
+		pos_hint:{'right':1,'y':0}
+	MyButton:
+		text:'B3'
+		pos_hint:{'center_x':0.5,'center_y':5}
+		
+	MyButton:
+		text:'B4'
+		pos_hint:{'x':0,'top':1}		
+	MyButton:
+		text:'B5'
+		pos_hint:{'right':1,'top':1}				

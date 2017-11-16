@@ -1,0 +1,29 @@
+<Ball>:
+    size: 50,50
+    canvas.after:
+        Ellipse:
+            pos: self.pos
+            size: self.size
+            source: 'kivy.png'
+    
+<Ex29>:
+    size: 800, 600
+    ball1: ball_id1
+    ball2: ball_id2
+    canvas:
+        Color:
+            rgb: 0,1,0
+        Rectangle:
+            size: root.width,root.height
+            pos: 0,0
+    Ball:
+        id: ball_id1
+        canvas.before:
+            Color:
+                rgb: 1, 0, 0
+            
+    Ball:
+        id: ball_id2
+        canvas.before:
+            Color:
+                rgb: 1, 0, 1     

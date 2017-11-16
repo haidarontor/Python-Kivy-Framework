@@ -1,0 +1,52 @@
+<EX22>:
+	orientation: 'vertical'
+	Button:
+		text:'Color Select'
+		on_press:root.selectColor(*args)
+	Button:
+		text:'Shape Select'
+		on_press:root.selectShape(*args)	
+		
+<SelectColorPopup>:
+	title:'Color Select'
+	size_hint:None,None
+	size:400 ,400
+	GridLayout:
+		cols:2
+		Label:
+			text:'Red'
+		CheckBox:
+			group: 'color'
+			on_active:root.color = 'red'
+		Label:
+			text:'Green'
+		CheckBox:
+			group:'color'
+			on_active:root.color='Green'
+		Label:
+			text:'Blue'
+		CheckBox:
+			group:'color'
+			on_active: root.color ='Blue'				
+<SelectShapePopup>:
+	title:'Shape Select'
+	size_hint:None,None
+	size:400 ,400
+	GridLayout:
+		cols:2
+		Label:
+			text:'Rectangle'
+		CheckBox:
+			group: 'shape'
+			on_active:root.shape = 'Rectangle'
+		Label:
+			text:'Circle'
+		CheckBox:
+			group:'shape'
+			on_active:root.shape='Circle'
+		Label:
+			text:'Triangle'
+		CheckBox:
+			group:'shape'
+			on_active: root.shape ='Triangle'				
+										

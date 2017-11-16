@@ -1,0 +1,41 @@
+
+<Ex21>:
+	cols:3
+	canvas:
+		Color:
+			rgb:.2,.2,.2
+		Rectangle:
+			pos:self.pos
+			size:self.size
+		
+	Label:
+		text:'A checkbox'		
+	CheckBox:
+		on_active:root.checkActive(*args)
+	Label:
+		text:root.status
+	Label:
+		text:'A group Checkbox'		
+	CheckBox:
+		group:'my_check_group'
+		on_active: root.checkActive1(*args)
+	Label:
+		text: root.status1
+	
+	Label:
+		text:'A group checkbox'
+	CheckBox:
+		group:'my_check_group'
+		on_active: root.checkActive2(*args)
+	Label:
+		text:root.status2
+		
+	Label:
+		text:'Python is the best Language'
+	CheckBox:
+		id:pythonLang
+		active:True
+		on_active:root.checkActive3(*args)
+	Label:
+		text:'right on'				
+							

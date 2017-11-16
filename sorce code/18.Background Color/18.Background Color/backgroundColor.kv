@@ -1,0 +1,17 @@
+<MyButton@Button>:
+    color: [0, 1, 1, 1]
+    
+<MyStack>:
+    orientation: 'bt-rl'
+    spacing: 20
+    padding: [20,10]
+    canvas:
+        Color:
+            rgb: [.5, .5, .95]
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    MyButton:
+		text: 'B1'
+		size_hint: [.3,.4]
+	
